@@ -41,7 +41,7 @@ def main():
     matchedwords["matched"] = finishedlist
 
     ## list all words containing matched word
-    print(f"There are {len(matchedwords)} words that contain the word '{args.searchword}' in the Pokemon Item API!")
+    print(f"There are {len(matchedwords['matched'])} words that contain the word '{args.searchword}' in the Pokemon Item API!")
     print(f"List of Pokemon items containing '{args.searchword}': ")
     print(matchedwords)
 
@@ -64,4 +64,5 @@ if __name__ == "__main__":
     type=str, default='ball', help="Pass in any word. Default is 'ball'")
     args = parser.parse_args()
     main()
+
 
