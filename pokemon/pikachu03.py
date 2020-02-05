@@ -60,7 +60,7 @@ def main():
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Pass in a word to search\
     the Pokemon item API")
-    parser.add_argument('searchword', metavar='SEARCHW',\
+    parser.add_argument('--searchword', metavar='SEARCHW',\
     type=str, default='ball', help="Pass in any word. Default is 'ball'")
     args = parser.parse_args()
     main()
